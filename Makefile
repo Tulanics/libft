@@ -13,4 +13,8 @@
 all: compile
 
 compile:
-	gcc -c -Wall -Wextra -Werror ft_isalpha.c -o
+	gcc -c -Wall -Wextra -Werror ft_isalpha.c
+	gcc main.c ft_isalpha.o -o main
+	./main
+	rm *.o
+	rm main
