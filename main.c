@@ -4,7 +4,7 @@
 
 int	main(void)
 {
-	write(1, "MAIN EXECUTADO!\033", 16);
+	write(1, "MAIN EXECUTADO!", 16);
 	write(1, "\n", 1);
 	// char	*str;
 	// int	i;
