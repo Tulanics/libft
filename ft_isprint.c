@@ -6,7 +6,7 @@
 /*   By: tconceic <tconceic@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 20:38:44 by tconceic          #+#    #+#             */
-/*   Updated: 2021/08/28 23:25:49 by tconceic         ###   ########.fr       */
+/*   Updated: 2021/08/29 12:57:52 by tconceic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isprint(int c)
 {
-	if(c >= 32 || c <=126)
-		return(1);
-	return(0);
+	if (c >= 32 || c <= 126)
+		return (1);
+	return (0);
 }

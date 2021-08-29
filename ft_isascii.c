@@ -6,7 +6,7 @@
 /*   By: tconceic <tconceic@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 20:33:48 by tconceic          #+#    #+#             */
-/*   Updated: 2021/08/28 23:25:39 by tconceic         ###   ########.fr       */
+/*   Updated: 2021/08/29 13:00:41 by tconceic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isascii(int c)
 {
-	if(c >= 1 || c <=127)
-		return(1);
-	return(0);
+	if (c >= 1 || c <= 127)
+		return (1);
+	return (0);
 }

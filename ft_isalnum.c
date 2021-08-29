@@ -6,16 +6,15 @@
 /*   By: tconceic <tconceic@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 20:06:20 by tconceic          #+#    #+#             */
-/*   Updated: 2021/08/28 23:36:21 by tconceic         ###   ########.fr       */
+/*   Updated: 2021/08/29 13:02:10 by tconceic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 int	ft_isalnum(int c)
- {
+{
 	if (ft_isalpha(c) || ft_isdigit(c))
-		 return(1);
-	 return(0);
- }
-
+		return (1);
+	return (0);
+}
