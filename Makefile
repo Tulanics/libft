@@ -17,6 +17,7 @@ SRC = ft_isalpha.c \
 		ft_isascii.c \
 		ft_isprint.c \
 		ft_strlen.c \
+		ft
 
 # Compiled Object Format
 COF = ${SRC:.c = .o}
@@ -28,6 +29,5 @@ compile:
 
 clear:
 	rm *.o
-	rm a.out
 
 .PHONY: main
