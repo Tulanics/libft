@@ -10,6 +10,8 @@
 #                                                                              #
 # **************************************************************************** #
 
+NAME = libft.a
+
 #source code
 SRC = ft_isalpha.c \
 		ft_isdigit.c \
@@ -18,16 +20,39 @@ SRC = ft_isalpha.c \
 		ft_isprint.c \
 		ft_strlen.c \
 		ft_memset.c\
+		ft_bzero.c\
+		# ft_memcpy\
+
+OBJ = ./*.o
+
+FLAG = -Wall -Wextra -Werror -I. -c
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	@ar rc $(NAME) $(OBJ)
+	@ranlib $(NAME)
+
+$(OBJ): $(SRC)
+	@gcc $(FLAG) $(SRC)
+
+clean:
+	@rm -f $(OBJ)
+
+fclean: clean
+	@rm -f $(NAME)
+
+re: fclean all
 
 # Compiled Object Format
-COF = ${SRC:.c = .o}
+# COF = ${SRC:.c = .o}
 
-all: compile clear
+# all: compile clear
 
-compile:
-	gcc -c -Wall -Wextra -Werror ${SRC}
+# compile:
+# 	gcc -c -Wall -Wextra -Werror ${SRC}
 
-clear:
-	rm *.o
+# clear:
+# 	rm *.o
 
-.PHONY: main
+# .PHONY: main
