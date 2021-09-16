@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <stddef.h>
+# include <stdio.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -25,5 +26,6 @@ void	*ft_memset(void *dest, int c, size_t len);
 void	ft_bzero(void *dest, size_t len);
 void	*ft_memcpy(void *dest, const void *src, size_t count);
 void	*ft_memmove(void *dest, const void *src, size_t count);
+// size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 
 #endif
