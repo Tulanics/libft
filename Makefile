@@ -24,7 +24,8 @@ SRC =\
 	ft_bzero.c\
 	ft_memcpy.c\
 	ft_memmove.c\
-	# ft_strlcpy.c\
+	ft_strlcpy.c\
+	ft_strlcat.c\
 
 OBJ = $(SRC:%.c=%.o)
 
@@ -33,31 +34,18 @@ FLAGS = -Wall -Wextra -Werror -I. -c
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	@ar rc $(NAME) $(OBJ)
-	@ranlib $(NAME)
+	ar rcs $(NAME) $(OBJ)
+	# ranlib $(NAME)
 
 $(OBJ): $(SRC)
-	@gcc $(FLAGS) $(SRC)
+	gcc $(FLAGS) $(SRC)
 
 clean:
-	@rm -f $(OBJ)
+	rm -f $(OBJ)
 
 fclean: clean
-	@rm -f $(NAME)
+	rm -f $(NAME)
 
 re: fclean all
 
 .PHONY: clean fclean all re
-
-# Compiled Object Format
-# COF = ${SRC:.c = .o}
-
-# all: compile clear
-
-# compile:
-# 	gcc -c -Wall -Wextra -Werror ${SRC}
-
-# clear:
-# 	rm *.o
-
-# .PHONY: main
