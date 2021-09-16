@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <stddef.h>
+# include <stdlib.h>
 # include <stdio.h>
 
 int		ft_isalpha(int c);
@@ -31,5 +32,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 int		ft_toupper(int ch);
 int		ft_tolower(int ch);
 char	*ft_strchr( const char *str, int ch );
+char	*ft_strrchr( const char *str, int ch );
 
 #endif

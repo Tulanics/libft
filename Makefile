@@ -29,6 +29,7 @@ SRC =\
 	ft_toupper.c\
 	ft_tolower.c\
 	ft_strchr.c\
+	ft_strrchr.c\
 
 OBJ = $(SRC:%.c=%.o)
 
