@@ -31,6 +31,7 @@ SRC =\
 	ft_strchr.c\
 	ft_strrchr.c\
 	ft_strncmp.c\
+	ft_memcmp.c\
 
 OBJ = $(SRC:%.c=%.o)
 
