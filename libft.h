@@ -36,6 +36,6 @@ char	*ft_strrchr(const char *str, int ch);
 int		ft_strncmp(const char *lhs, const char *rhs, size_t count);
 int		ft_memcmp(const void *lhs, const void *rhs, size_t count);
 void	*ft_memchr(const void *ptr, int ch, size_t count);
-
+char	*ft_strnstr(const char *big, const char *little, size_t count);
 
 #endif
