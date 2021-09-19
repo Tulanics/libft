@@ -1,32 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tconceic <tconceic@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/17 09:22:13 by tconceic          #+#    #+#             */
-/*   Updated: 2021/09/19 08:58:10 by tconceic         ###   ########.fr       */
+/*   Created: 2021/09/19 08:37:08 by tconceic          #+#    #+#             */
+/*   Updated: 2021/09/19 08:59:37 by tconceic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcmp(const void *lhs, const void *rhs, size_t count)
+void	*ft_memchr(const void *ptr, int ch, size_t count)
 {
 	unsigned int	i;
-	unsigned char	*str1;
-	unsigned char	*str2;
+	unsigned char	chr;
+	unsigned char	*str;
 
-	str1 = (unsigned char *) lhs;
-	str2 = (unsigned char *) rhs;
+	str = (unsigned char *)ptr;
+	chr = (unsigned char)ch;
 	i = 0;
-	while (count > 0)
+	while (i < count)
 	{
-		if (str1[i] - str2[i] != 0)
-			return (str1[i] - str2[i]);
+		if (*str == chr)
+		{
+			return (str);
+		}
 		i++;
-		count --;
+		str ++;
 	}
-	return (0);
+	return ('\0');
 }
