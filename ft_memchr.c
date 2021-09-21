@@ -30,5 +30,5 @@ void	*ft_memchr(const void *ptr, int ch, size_t count)
 		i++;
 		str ++;
 	}
-	return ('\0');
+	return (NULL);
 }
