@@ -1,30 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tconceic <tconceic@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/31 20:57:39 by tconceic          #+#    #+#             */
-/*   Updated: 2021/09/26 15:45:22 by tconceic         ###   ########.fr       */
+/*   Created: 2021/09/26 18:43:53 by tconceic          #+#    #+#             */
+/*   Updated: 2021/09/26 19:03:05 by tconceic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t count)
+ft_itoa(int n)
 {
-	unsigned int	i;
-	unsigned char	*sc;
-	unsigned char	*dt;
-
-	sc = (void *)src;
-	dt = (void *)dest;
-	i = 0;
-	while (i < count)
-	{
-		dt[i] = sc[i];
-		i++;
-	}
-	return ((unsigned char *)dt);
+	
 }
