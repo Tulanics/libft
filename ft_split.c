@@ -69,7 +69,7 @@ char	**ft_to_split(char **result, char const *s, char c, int word_num)
 		word_len = 0;
 		i++;
 	}
-	result[i] = '\0';
+	result[i] = NULL;
 	return (result);
 }
 
