@@ -6,13 +6,13 @@
 /*   By: tconceic <tconceic@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/26 18:43:53 by tconceic          #+#    #+#             */
-/*   Updated: 2021/09/26 21:38:21 by tconceic         ###   ########.fr       */
+/*   Updated: 2021/09/28 21:12:25 by tconceic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-long int	ft_absolute(int n)
+static long int	ft_absolute(int n)
 {
 	unsigned long int	n_abs;
 
@@ -22,7 +22,7 @@ long int	ft_absolute(int n)
 	return (n_abs);
 }
 
-int	ft_n_len(int n)
+static int	ft_n_len(int n)
 {
 	int					n_len;
 	unsigned long int	n_abs;

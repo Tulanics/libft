@@ -6,7 +6,7 @@
 /*   By: tconceic <tconceic@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/26 14:53:04 by tconceic          #+#    #+#             */
-/*   Updated: 2021/09/26 18:27:08 by tconceic         ###   ########.fr       */
+/*   Updated: 2021/09/28 21:13:11 by tconceic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static int	ft_word_count(char const *s, char c)
 	return (count);
 }
 
-char	*ft_make_word(char *word, char const *s, int j, int word_len)
+static char	*ft_make_word(char *word, char const *s, int j, int word_len)
 {
 	int	i;
 
@@ -46,7 +46,7 @@ char	*ft_make_word(char *word, char const *s, int j, int word_len)
 	return (word);
 }
 
-char	**ft_to_split(char **result, char const *s, char c, int word_num)
+static char	**ft_to_split(char **result, char const *s, char c, int word_num)
 {
 	int	i;
 	int	j;
