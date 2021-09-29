@@ -53,6 +53,7 @@ SRC =\
 BONUS =\
 		ft_lstnew.c\
 		ft_lstadd_front.c\
+		ft_lstsize.c\
 
 OBJ = $(SRC:%.c=%.o)
 
