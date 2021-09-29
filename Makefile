@@ -12,7 +12,7 @@
 
 NAME = libft.a
 
-#source code
+#source code part 1 and 2
 SRC =\
 	ft_isalpha.c\
 	ft_isdigit.c\
@@ -49,7 +49,14 @@ SRC =\
 	ft_putendl_fd.c\
 	ft_putnbr_fd.c\
 
+#source code bônus.
+BONUS =\
+		ft_lstnew.c\
+		ft_lstadd_front.c\
+
 OBJ = $(SRC:%.c=%.o)
+
+OBJ_BONUS =  $(BONUS:%.c=%.o)
 
 FLAGS = -Wall -Wextra -Werror -I. -c
 
@@ -61,12 +68,18 @@ $(NAME): $(OBJ)
 $(OBJ): $(SRC)
 	gcc $(FLAGS) $(SRC)
 
+$(OBJ_BONUS):
+	gcc $(FLAGS) $(BONUS)
+
 clean:
-	rm -f $(OBJ)
+	rm -f $(OBJ) $(OBJ_BONUS)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+bonus: $(OBJ) $(OBJ_BONUS)
+	ar rcs $(NAME) $(OBJ) $(OBJ_BONUS)
 
 .PHONY: clean fclean all re
