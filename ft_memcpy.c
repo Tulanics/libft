@@ -6,7 +6,7 @@
 /*   By: tconceic <tconceic@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/31 20:57:39 by tconceic          #+#    #+#             */
-/*   Updated: 2021/10/01 09:46:48 by tconceic         ###   ########.fr       */
+/*   Updated: 2021/10/01 09:50:03 by tconceic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,11 @@ void	*ft_memcpy(void *dest, const void *src, size_t count)
 	unsigned char	*sc;
 	unsigned char	*dt;
 
+	if(!dest && !src)
+		return (NULL);
 	sc = (void *)src;
 	dt = (void *)dest;
 	i = 0;
-	if(!dest || !src)
-		return (NULL);
 	while (i < count)
 	{
 		dt[i] = sc[i];
