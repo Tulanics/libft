@@ -6,7 +6,7 @@
 /*   By: tconceic <tconceic@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/19 14:34:26 by tconceic          #+#    #+#             */
-/*   Updated: 2021/10/01 10:24:58 by tconceic         ###   ########.fr       */
+/*   Updated: 2021/10/01 10:36:18 by tconceic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_atoi(const char *str)
 {
 	int			sign;
-	long long	result;
+	int long	result;
 	int			i;
 
 	result = 0;
