@@ -6,7 +6,7 @@
 /*   By: tconceic <tconceic@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/26 14:53:04 by tconceic          #+#    #+#             */
-/*   Updated: 2021/09/28 21:13:11 by tconceic         ###   ########.fr       */
+/*   Updated: 2021/10/01 11:57:31 by tconceic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,8 +78,6 @@ char	**ft_split(char const *s, char c)
 	int		word_num;
 	char	**result;
 
-	if (*s == '\0')
-		return (NULL);
 	word_num = ft_word_count((char const *)s, c);
 	result = (char **)malloc(sizeof (char *) * (word_num + 1));
 	if (result == NULL)
