@@ -1,9 +1,9 @@
-### libft
+# libft
 # ecole42
 
-# Projeto para recodificar um conjunto de funções libc, conforme definido em seus “man”, com funções que apresentam o mesmo protótipo e comportamentos das originais.
+### Projeto para recodificar um conjunto de funções libc, conforme definido em seus “man”, com funções que apresentam o mesmo protótipo e comportamentos das originais.
 
-# Exite também nesse projeto um conjunto de funções que não estão incluídas no libc;
+### Exite também nesse projeto um conjunto de funções que não estão incluídas no libc:
 char *ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
