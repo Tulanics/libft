@@ -6,7 +6,7 @@
 /*   By: tconceic <tconceic@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/26 14:53:04 by tconceic          #+#    #+#             */
-/*   Updated: 2021/10/01 11:57:31 by tconceic         ###   ########.fr       */
+/*   Updated: 2021/10/11 13:46:43 by tconceic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ static char	**ft_to_split(char **result, char const *s, char c, int word_num)
 			j++;
 			word_len++;
 		}
-		result[i] = (char *)calloc(sizeof(char), (word_len + 1));
+		result[i] = (char *)ft_calloc(sizeof(char), (word_len + 1));
 		ft_make_word(result[i], s, j, word_len);
 		word_len = 0;
 		i++;

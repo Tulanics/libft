@@ -6,7 +6,7 @@
 /*   By: tconceic <tconceic@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/19 20:04:21 by tconceic          #+#    #+#             */
-/*   Updated: 2021/09/19 21:23:12 by tconceic         ###   ########.fr       */
+/*   Updated: 2021/10/08 17:01:02 by tconceic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	s1_len = ft_strlen(s1);
 	s2_len = ft_strlen(s2);
 	str_end = (char *)malloc(s1_len + s2_len + 1);
-	if (!(char *)malloc(s1_len + s2_len + 1))
+	if (str_end == NULL)
 		return (NULL);
 	i = 0;
 	while (i < s1_len)

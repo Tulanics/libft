@@ -6,7 +6,7 @@
 /*   By: tconceic <tconceic@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/19 15:44:26 by tconceic          #+#    #+#             */
-/*   Updated: 2021/09/19 16:20:37 by tconceic         ###   ########.fr       */
+/*   Updated: 2021/10/08 17:00:48 by tconceic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_calloc( size_t num, size_t size )
 
 	ptr_size = num * size;
 	ptr = malloc(ptr_size);
-	if (!malloc(ptr_size))
+	if (ptr == NULL)
 		return (NULL);
 	ft_bzero(ptr, ptr_size);
 	return (ptr);

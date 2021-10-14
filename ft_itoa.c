@@ -6,15 +6,15 @@
 /*   By: tconceic <tconceic@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/26 18:43:53 by tconceic          #+#    #+#             */
-/*   Updated: 2021/09/28 21:12:25 by tconceic         ###   ########.fr       */
+/*   Updated: 2021/10/08 22:23:46 by tconceic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static long int	ft_absolute(int n)
+static long long int	ft_absolute(int n)
 {
-	unsigned long int	n_abs;
+	long long int	n_abs;
 
 	n_abs = n;
 	if (n < 0)
@@ -24,8 +24,8 @@ static long int	ft_absolute(int n)
 
 static int	ft_n_len(int n)
 {
-	int					n_len;
-	unsigned long int	n_abs;
+	int				n_len;
+	long long int	n_abs;
 
 	n_len = 1;
 	n_abs = ft_absolute(n);
@@ -39,13 +39,13 @@ static int	ft_n_len(int n)
 
 char	*ft_itoa(int n)
 {
-	char				*str;
-	unsigned long int	n_abs;
-	int					i;
-	int					n_len;
+	char			*str;
+	long long int	n_abs;
+	int				i;
+	int				n_len;
 
 	n_abs = ft_absolute(n);
-	i = 1;
+	i = 0;
 	n_len = ft_n_len(n);
 	if (n < 0)
 		n_len++;
@@ -53,14 +53,15 @@ char	*ft_itoa(int n)
 	if (str == NULL)
 		return (NULL);
 	if (n < 0)
-		str[0] = '-';
-	while (i <= n_len)
 	{
-		if (str[n_len - i] != '-')
-			str[n_len - i] = (n_abs % 10) + '0';
-		n_abs /= 10;
+		str[0] = '-';
 		i++;
 	}
 	str[n_len] = '\0';
+	while (i < n_len)
+	{
+		str[--n_len] = (n_abs % 10) + '0';
+		n_abs /= 10;
+	}
 	return (str);
 }

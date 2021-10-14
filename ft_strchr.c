@@ -6,7 +6,7 @@
 /*   By: tconceic <tconceic@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 19:34:57 by tconceic          #+#    #+#             */
-/*   Updated: 2021/09/16 19:37:37 by tconceic         ###   ########.fr       */
+/*   Updated: 2021/10/08 19:05:06 by tconceic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strchr(const char *str, int ch)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i] == ch)
+		if (str[i] == (unsigned char)ch)
 			return ((char *)str + i);
 		i++;
 	}
